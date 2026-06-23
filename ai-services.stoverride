@@ -101,38 +101,38 @@ tiles:
 
 script-providers:
   GPT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gpt.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/gpt.js
     interval: 86400
   YouTube-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/youtube.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/youtube.js
     interval: 86400
   Netflix-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/netflix.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/netflix.js
     interval: 86400
   TikTok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/tiktok.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/tiktok.js
     interval: 86400
   Gemini-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gemini.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/gemini.js
     interval: 86400
   Claude-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/claude.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/claude.js
     interval: 86400
   Grok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/grok.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/grok.js
     interval: 86400
   Bilibili-HMT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bilibili-hmt.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/bilibili-hmt.js
     interval: 86400
   Bahamut-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bahamut.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/bahamut.js
     interval: 86400
   Instagram-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/instagram.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/instagram.js
     interval: 86400
   Twitter-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/twitter.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/twitter.js
     interval: 86400
   Poe-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/poe.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@b5f9b323a71a279b5b38408a02a3d820d2648a99/script/poe.js
     interval: 86400
