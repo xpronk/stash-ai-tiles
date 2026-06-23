@@ -70,28 +70,28 @@ tiles:
 
 script-providers:
   Region-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/region.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/region.js
   GPT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gpt.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/gpt.js
   YouTube-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/youtube.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/youtube.js
   Netflix-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/netflix.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/netflix.js
   TikTok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/tiktok.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/tiktok.js
   Gemini-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gemini.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/gemini.js
   Claude-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/claude.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/claude.js
   Grok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/grok.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/grok.js
   Bilibili-HMT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bilibili-hmt.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/bilibili-hmt.js
   Bahamut-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bahamut.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/bahamut.js
   Instagram-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/instagram.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/instagram.js
   Twitter-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/twitter.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/twitter.js
   Poe-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/poe.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@95546d11e3eb78b5612caa11b4823c041e8d0840/script/poe.js
