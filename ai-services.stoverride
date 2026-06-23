@@ -1,5 +1,5 @@
 name: AI Services & Unlock Check
-desc: 检测 GPT、YouTube、Netflix、TikTok、Gemini、Claude、Grok、Bilibili 港澳台、Bahamut、Instagram、X/Twitter、Poe 可用性，并显示出口国家。
+desc: 检测 GPT、YouTube、Netflix、TikTok、Gemini、Claude、Grok、Bilibili 港澳台、Bahamut、Instagram、X/Twitter、Poe 可用性，并显示出口国家与更新时间。
 
 tiles:
   - name: GPT-Check
