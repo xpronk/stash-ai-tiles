@@ -1,9 +1,9 @@
 name: AI Services & Unlock Check
-desc: 检测常用 AI / 流媒体 / 社交服务可用性；另有出口地区 Tile。
+desc: 检测常用 AI / 流媒体 / 社交服务可用性。
 
 tiles:
   - name: Region-Check
-    title: 出口地区
+    title: 地区
     icon: https://www.google.com/s2/favicons?domain=ip.sb&sz=64
     collapsed: true
     url: https://ip.sb
@@ -43,12 +43,12 @@ tiles:
     collapsed: true
     url: https://grok.com
   - name: Bilibili-HMT-Check
-    title: Bilibili 港澳台
+    title: Bilibili
     icon: https://www.google.com/s2/favicons?domain=bilibili.com&sz=64
     collapsed: true
     url: https://www.bilibili.com
   - name: Bahamut-Check
-    title: Bahamut 动画疯
+    title: Bahamut
     icon: https://www.google.com/s2/favicons?domain=ani.gamer.com.tw&sz=64
     collapsed: true
     url: https://ani.gamer.com.tw
@@ -58,7 +58,7 @@ tiles:
     collapsed: true
     url: https://www.instagram.com
   - name: Twitter-Check
-    title: X / Twitter
+    title: X/Twitter
     icon: https://www.google.com/s2/favicons?domain=x.com&sz=64
     collapsed: true
     url: https://x.com
@@ -70,28 +70,28 @@ tiles:
 
 script-providers:
   Region-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/region.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/region.js
   GPT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/gpt.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gpt.js
   YouTube-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/youtube.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/youtube.js
   Netflix-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/netflix.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/netflix.js
   TikTok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/tiktok.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/tiktok.js
   Gemini-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/gemini.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gemini.js
   Claude-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/claude.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/claude.js
   Grok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/grok.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/grok.js
   Bilibili-HMT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/bilibili-hmt.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bilibili-hmt.js
   Bahamut-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/bahamut.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bahamut.js
   Instagram-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/instagram.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/instagram.js
   Twitter-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/twitter.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/twitter.js
   Poe-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@797b9087fdb198152aa2403c8e9a98d11b0558de/script/poe.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/poe.js
