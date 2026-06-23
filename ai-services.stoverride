@@ -1,10 +1,14 @@
 name: AI Services & Unlock Check
-desc: Detect availability of AI, streaming & social services. Region from response headers.
+desc: |-
+  AI组(GPT/YouTube/Gemini/Claude/Grok/Poe)通过 cloudflare.com/cdn-cgi/trace 取地区。
+  需在 Stash Ai 规则中添加: DOMAIN,cloudflare.com,Ai  +  DOMAIN,www.cloudflare.com,Ai
+  Netflix 用自身 X-Originating-Url 取地区。
+  其余服务仅显示可用性。
 
 tiles:
   - name: GPT-Check
     title: ChatGPT
-    icon: https://chatgpt.com/favicon.ico
+    icon: https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64
     collapsed: true
     url: https://chatgpt.com
   - name: YouTube-Check
@@ -66,25 +70,37 @@ tiles:
 script-providers:
   GPT-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/gpt.js
+    interval: 86400
   YouTube-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/youtube.js
+    interval: 86400
   Netflix-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/netflix.js
+    interval: 86400
   TikTok-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/tiktok.js
+    interval: 86400
   Gemini-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/gemini.js
+    interval: 86400
   Claude-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/claude.js
+    interval: 86400
   Grok-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/grok.js
+    interval: 86400
   Bilibili-HMT-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/bilibili-hmt.js
+    interval: 86400
   Bahamut-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/bahamut.js
+    interval: 86400
   Instagram-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/instagram.js
+    interval: 86400
   Twitter-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/twitter.js
+    interval: 86400
   Poe-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/poe.js
+    interval: 86400

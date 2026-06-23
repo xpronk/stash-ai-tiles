@@ -6,24 +6,26 @@ async function request(method, params) {
   });
 }
 
-function getCountry(response) {
-  if (!response || !response.headers) return "";
-  var h = response.headers;
-  return (h["cf-ipcountry"] || h["CF-IPCountry"] || h["x-geo-country"] ||
-          h["X-Geo-Country"] || h["x-region"] || h["X-Region"] ||
-          h["cloudfront-viewer-country"] || "").toUpperCase();
+function parseCFTrace(text) {
+  var m = (text || "").match(/loc=([A-Z]{2})/);
+  return m ? m[1] : "";
 }
 
 async function main() {
+  const tik = Date.now();
   const { error, response, data } = await request(
     "GET",
-    "https://api.openai.com/compliance/cookie_requirements?_=" + Date.now()
+    "https://api.openai.com/compliance/cookie_requirements?_=" + tik
   );
   if (error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
-  const cc = getCountry(response);
   if (String(data || "").toLowerCase().indexOf("unsupported_country") >= 0) {
     $done({ content: "Unsupported", backgroundColor: "" }); return;
   }
-  $done({ content: cc ? "Available · " + cc : "Available", backgroundColor: "#88A788" });
+  const { error: e2, data: d2 } = await request(
+    "GET",
+    "https://www.cloudflare.com/cdn-cgi/trace?_=" + tik
+  );
+  const cc = e2 ? "" : parseCFTrace(d2);
+  $done({ content: cc ? "Available \u00b7 " + cc : "Available", backgroundColor: "#88A788" });
 }
 (async () => { main().catch(() => $done({ content: "Error", backgroundColor: "" })); })();
