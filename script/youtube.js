@@ -6,14 +6,33 @@ async function request(method, params) {
   });
 }
 
+function parseCountry(data) {
+  if (!data) return "";
+  try {
+    const j = JSON.parse(data);
+    if (j.country) return String(j.country).toUpperCase();
+    if (j.country_code) return String(j.country_code).toUpperCase();
+    if (j.alpha2) return String(j.alpha2).toUpperCase();
+    if (j.code) return String(j.code).toUpperCase();
+  } catch(e) {}
+  return "";
+}
+
+async function getCountry() {
+  const tik = Date.now();
+  const [r1, r2] = await Promise.all([
+    request("GET", "https://api.ip.sb/geoip?_=" + tik),
+    request("GET", "https://api.country.is/?t=" + tik)
+  ]);
+  return parseCountry(r1.data || "") || parseCountry(r2.data || "") || "";
+}
+
 async function main() {
   const tik = Date.now();
-  const [cr, sr] = await Promise.all([
-    request("GET", "https://api.country.is/?t=" + tik),
+  const [cc, sr] = await Promise.all([
+    getCountry(),
     request("GET", "https://www.youtube.com/premium?_=" + tik)
   ]);
-  let cc = "";
-  try { const j = JSON.parse(cr.data || "{}"); if (j.country) cc = String(j.country).toUpperCase(); } catch(e) {}
   if (sr.error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
   const d = String(sr.data || "").toLowerCase();
   if (d.indexOf("youtube premium is not available in your country") >= 0) {
