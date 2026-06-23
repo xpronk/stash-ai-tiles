@@ -8,23 +8,19 @@ async function request(method, params) {
 
 function parseCountry(data) {
   if (!data) return "";
-  try {
-    const j = JSON.parse(data);
-    if (j.country) return String(j.country).toUpperCase();
-    if (j.country_code) return String(j.country_code).toUpperCase();
-    if (j.alpha2) return String(j.alpha2).toUpperCase();
-    if (j.code) return String(j.code).toUpperCase();
-  } catch(e) {}
-  return "";
+  const m = String(data).match(/loc=([A-Z]{2})/);
+  return m ? m[1] : "";
 }
 
 async function getCountry() {
   const tik = Date.now();
-  const [r1, r2] = await Promise.all([
-    request("GET", "https://api.ip.sb/geoip?_=" + tik),
-    request("GET", "https://api.country.is/?t=" + tik)
-  ]);
-  return parseCountry(r1.data || "") || parseCountry(r2.data || "") || "";
+  const r = await request("GET", "https://www.cloudflare.com/cdn-cgi/trace?_=" + tik);
+  if (!r.error) {
+    const cc = parseCountry(r.data);
+    if (cc) return cc;
+  }
+  const r2 = await request("GET", "https://api.ip.sb/geoip?_=" + tik);
+  return parseCountry(r2.data) || "";
 }
 
 async function main() {
@@ -39,7 +35,7 @@ async function main() {
     $done({ content: "Not Available", backgroundColor: "" }); return;
   }
   if (d.indexOf("ad-free") >= 0) {
-    $done({ content: cc ? "Available \u00b7 " + cc : "Available", backgroundColor: "#FF0000" }); return;
+    $done({ content: "Available \u00b7 " + (cc || "??"), backgroundColor: "#FF0000" }); return;
   }
   $done({ content: "Unknown", backgroundColor: "" });
 }

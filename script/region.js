@@ -8,27 +8,14 @@ async function request(method, params) {
 
 function parseCountry(data) {
   if (!data) return "";
-  try {
-    const j = JSON.parse(data);
-    if (j.country) return String(j.country).toUpperCase();
-    if (j.country_code) return String(j.country_code).toUpperCase();
-    if (j.alpha2) return String(j.alpha2).toUpperCase();
-    if (j.code) return String(j.code).toUpperCase();
-  } catch(e) {}
-  return "";
-}
-
-async function getCountry() {
-  const tik = Date.now();
-  const [r1, r2] = await Promise.all([
-    request("GET", "https://api.ip.sb/geoip?_=" + tik),
-    request("GET", "https://api.country.is/?t=" + tik)
-  ]);
-  return parseCountry(r1.data || "") || parseCountry(r2.data || "") || "??";
+  const m = String(data).match(/loc=([A-Z]{2})/);
+  return m ? m[1] : "";
 }
 
 async function main() {
-  const cc = await getCountry();
-  $done({ content: cc || "??", backgroundColor: cc && cc !== "??" ? "#2563EB" : "" });
+  const r = await request("GET", "https://www.cloudflare.com/cdn-cgi/trace?_=" + Date.now());
+  if (r.error) { $done({ content: "??", backgroundColor: "" }); return; }
+  const cc = parseCountry(r.data);
+  $done({ content: cc || "??", backgroundColor: cc ? "#2563EB" : "" });
 }
 (async () => { main().catch(() => $done({ content: "??", backgroundColor: "" })); })();
