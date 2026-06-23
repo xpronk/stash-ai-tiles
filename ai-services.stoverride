@@ -1,12 +1,7 @@
 name: AI Services & Unlock Check
-desc: Detect availability of AI, streaming & social services.
+desc: Detect availability of AI, streaming & social services. Region from response headers.
 
 tiles:
-  - name: Region-Check
-    title: Exit Region
-    icon: https://www.google.com/s2/favicons?domain=ip.sb&sz=64
-    collapsed: true
-    url: https://ip.sb
   - name: GPT-Check
     title: ChatGPT
     icon: https://chatgpt.com/favicon.ico
@@ -69,8 +64,6 @@ tiles:
     url: https://poe.com
 
 script-providers:
-  Region-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/region.js
   GPT-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/gpt.js
   YouTube-Check:

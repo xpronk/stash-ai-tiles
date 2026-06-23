@@ -6,34 +6,25 @@ async function request(method, params) {
   });
 }
 
-function parseCountry(data) {
-  if (!data) return "";
-  const m = String(data).match(/loc=([A-Z]{2})/);
-  return m ? m[1] : "";
+function getCountry(response) {
+  if (!response || !response.headers) return "";
+  var h = response.headers;
+  return (h["cf-ipcountry"] || h["CF-IPCountry"] || h["x-geo-country"] ||
+          h["X-Geo-Country"] || h["x-region"] || h["X-Region"] ||
+          h["cloudfront-viewer-country"] || "").toUpperCase();
 }
 
-async function getCountry() {
-  const tik = Date.now();
-  const r = await request("GET", "https://www.cloudflare.com/cdn-cgi/trace?_=" + tik);
-  if (!r.error) {
-    const cc = parseCountry(r.data);
-    if (cc) return cc;
-  }
-  const r2 = await request("GET", "https://api.ip.sb/geoip?_=" + tik);
-  return parseCountry(r2.data) || "";
-}
-
-// https://poe.com and ? replaced by build script
 async function main() {
   const tik = Date.now();
-  const [cc, sr] = await Promise.all([
-    getCountry(),
-    request("GET", "https://poe.com" + "?" + "_=" + tik)
-  ]);
-  if (sr.error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
-  const s = sr.response ? (sr.response.status || sr.response.statusCode || 0) : 0;
+  const { error, response, data } = await request(
+    "GET",
+    "https://poe.com" + "?" + "_=" + tik
+  );
+  if (error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
+  const s = response ? (response.status || response.statusCode || 0) : 0;
   if ((s >= 200 && s < 500) || s === 401 || s === 403) {
-    $done({ content: "Available \u00b7 " + (cc || "??"), backgroundColor: "#FF0000" });
+    const cc = getCountry(response);
+    $done({ content: cc ? "Available · " + cc : "Available", backgroundColor: "#FF0000" });
   } else {
     $done({ content: "Not Available", backgroundColor: "" });
   }

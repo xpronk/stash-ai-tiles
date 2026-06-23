@@ -6,23 +6,27 @@ async function request(method, params) {
   });
 }
 
-async function checkTitle(id) {
-  const r = await request("GET", "https://www.netflix.com/title/" + id);
-  if (r.error) return "";
-  const headers = (r.response || {}).headers || {};
-  const url = headers["X-Originating-Url"] || headers["x-originating-url"] || "";
-  if (!url) return "";
-  const parts = url.split("/");
-  const loc = parts[3];
-  if (loc === "title") return "US";
-  return (loc && loc.split("-")[0] || "").toUpperCase();
+function getCountry(response) {
+  if (!response || !response.headers) return "";
+  var h = response.headers;
+  return (h["cf-ipcountry"] || h["CF-IPCountry"] || h["x-geo-country"] ||
+          h["X-Geo-Country"] || h["x-region"] || h["X-Region"] ||
+          h["cloudfront-viewer-country"] || "").toUpperCase();
 }
 
 async function main() {
-  var c = await checkTitle(70143836);
-  if (c) { $done({ content: "No Restriction (" + c + ")", backgroundColor: "#E50914" }); return; }
-  c = await checkTitle(80197526);
-  if (c) { $done({ content: "Originals Only (" + c + ")", backgroundColor: "#E50914" }); return; }
-  $done({ content: "Not Available", backgroundColor: "" });
+  const tik = Date.now();
+  const { error, response, data } = await request(
+    "GET",
+    "" + "?" + "_=" + tik
+  );
+  if (error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
+  const s = response ? (response.status || response.statusCode || 0) : 0;
+  if ((s >= 200 && s < 500) || s === 401 || s === 403) {
+    const cc = getCountry(response);
+    $done({ content: cc ? "Available · " + cc : "Available", backgroundColor: "#FF0000" });
+  } else {
+    $done({ content: "Not Available", backgroundColor: "" });
+  }
 }
 (async () => { main().catch(() => $done({ content: "Error", backgroundColor: "" })); })();
