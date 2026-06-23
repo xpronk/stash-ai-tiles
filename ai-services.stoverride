@@ -1,0 +1,54 @@
+name: AI Services Check
+desc: 检测 Claude、Gemini、Perplexity、Grok、DeepSeek、Poe 等服务可用性。
+
+tiles:
+  - name: Claude-Check
+    title: Claude
+    icon: https://www.google.com/s2/favicons?domain=claude.ai&sz=64
+    collapsed: true
+    url: https://claude.ai
+  - name: Gemini-Check
+    title: Gemini
+    icon: https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64
+    collapsed: true
+    url: https://gemini.google.com
+  - name: Perplexity-Check
+    title: Perplexity
+    icon: https://www.google.com/s2/favicons?domain=perplexity.ai&sz=64
+    collapsed: true
+    url: https://www.perplexity.ai
+  - name: Grok-Check
+    title: Grok
+    icon: https://www.google.com/s2/favicons?domain=grok.com&sz=64
+    collapsed: true
+    url: https://grok.com
+  - name: DeepSeek-Check
+    title: DeepSeek
+    icon: https://www.google.com/s2/favicons?domain=deepseek.com&sz=64
+    collapsed: true
+    url: https://chat.deepseek.com
+  - name: Poe-Check
+    title: Poe
+    icon: https://www.google.com/s2/favicons?domain=poe.com&sz=64
+    collapsed: true
+    url: https://poe.com
+
+script-providers:
+  Claude-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/claude.js
+    path: ai-check/claude.js
+  Gemini-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/gemini.js
+    path: ai-check/gemini.js
+  Perplexity-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/perplexity.js
+    path: ai-check/perplexity.js
+  Grok-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/grok.js
+    path: ai-check/grok.js
+  DeepSeek-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/deepseek.js
+    path: ai-check/deepseek.js
+  Poe-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/poe.js
+    path: ai-check/poe.js
