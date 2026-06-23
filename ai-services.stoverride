@@ -41,16 +41,6 @@ tiles:
     icon: https://www.google.com/s2/favicons?domain=grok.com&sz=64
     collapsed: true
     url: https://grok.com
-  - name: Bilibili-HMT-Check
-    title: Bilibili GZ/TW
-    icon: https://www.google.com/s2/favicons?domain=bilibili.com&sz=64
-    collapsed: true
-    url: https://www.bilibili.com
-  - name: Bahamut-Check
-    title: Bahamut Anime
-    icon: https://www.google.com/s2/favicons?domain=ani.gamer.com.tw&sz=64
-    collapsed: true
-    url: https://ani.gamer.com.tw
   - name: Instagram-Check
     title: Instagram
     icon: https://www.google.com/s2/favicons?domain=instagram.com&sz=64
@@ -88,12 +78,6 @@ script-providers:
     interval: 86400
   Grok-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/grok.js
-    interval: 86400
-  Bilibili-HMT-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/bilibili-hmt.js
-    interval: 86400
-  Bahamut-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/bahamut.js
     interval: 86400
   Instagram-Check:
     url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/instagram.js
