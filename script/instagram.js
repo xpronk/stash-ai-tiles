@@ -12,12 +12,12 @@ async function main() {
     "GET",
     "https://www.instagram.com?_=" + tik
   );
-  if (error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
+  if (error) { $done({ content: "Network Error", backgroundColor: "#E4405F" }); return; }
   const s = response ? (response.status || response.statusCode || 0) : 0;
   if ((s >= 200 && s < 500) || s === 401 || s === 403) {
-    $done({ content: "Available", backgroundColor: "#FF0000" });
+    $done({ content: "Available", backgroundColor: "#E4405F" });
   } else {
-    $done({ content: "Not Available", backgroundColor: "" });
+    $done({ content: "Not Available", backgroundColor: "#E4405F" });
   }
 }
-(async () => { main().catch(() => $done({ content: "Error", backgroundColor: "" })); })();
+(async () => { main().catch(() => $done({ content: "Error", backgroundColor: "#E4405F" })); })();

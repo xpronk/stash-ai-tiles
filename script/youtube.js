@@ -17,13 +17,13 @@ async function main() {
     "GET",
     "https://www.youtube.com/premium?_=" + tik
   );
-  if (error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
+  if (error) { $done({ content: "Network Error", backgroundColor: "#FF0000" }); return; }
   const d = String(data || "").toLowerCase();
   if (d.indexOf("youtube premium is not available in your country") >= 0) {
-    $done({ content: "Not Available", backgroundColor: "" }); return;
+    $done({ content: "Not Available", backgroundColor: "#FF0000" }); return;
   }
   if (d.indexOf("ad-free") < 0) {
-    $done({ content: "Unknown", backgroundColor: "" }); return;
+    $done({ content: "Unknown", backgroundColor: "#FF0000" }); return;
   }
   const { error: e2, data: d2 } = await request(
     "GET",
@@ -32,4 +32,4 @@ async function main() {
   const cc = e2 ? "" : parseCFTrace(d2);
   $done({ content: cc ? "Available \u00b7 " + cc : "Available", backgroundColor: "#FF0000" });
 }
-(async () => { main().catch(() => $done({ content: "Error", backgroundColor: "" })); })();
+(async () => { main().catch(() => $done({ content: "Error", backgroundColor: "#FF0000" })); })();

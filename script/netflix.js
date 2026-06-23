@@ -17,10 +17,10 @@ async function main() {
     "GET",
     "https://www.netflix.com/?_=" + tik
   );
-  if (error) { $done({ content: "Network Error", backgroundColor: "" }); return; }
+  if (error) { $done({ content: "Network Error", backgroundColor: "#E50914" }); return; }
   const s = response ? (response.status || response.statusCode || 0) : 0;
   if (!((s >= 200 && s < 500) || s === 401 || s === 403)) {
-    $done({ content: "Not Available", backgroundColor: "" }); return;
+    $done({ content: "Not Available", backgroundColor: "#E50914" }); return;
   }
   var cc = "";
   var h = response && response.headers ? response.headers : {};
@@ -34,4 +34,4 @@ async function main() {
   }
   $done({ content: cc ? "Available \u00b7 " + cc : "Available", backgroundColor: "#E50914" });
 }
-(async () => { main().catch(() => $done({ content: "Error", backgroundColor: "" })); })();
+(async () => { main().catch(() => $done({ content: "Error", backgroundColor: "#E50914" })); })();
