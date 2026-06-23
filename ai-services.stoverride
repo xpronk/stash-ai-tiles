@@ -8,52 +8,52 @@ desc: |-
 tiles:
   - name: GPT-Check
     title: ChatGPT
-    icon: https://www.google.com/s2/favicons?domain=chatgpt.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/chatgpt.com.ico
     collapsed: true
     url: https://chatgpt.com
   - name: YouTube-Check
     title: YouTube
-    icon: https://www.google.com/s2/favicons?domain=youtube.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/youtube.com.ico
     collapsed: true
     url: https://www.youtube.com
   - name: Netflix-Check
     title: Netflix
-    icon: https://www.google.com/s2/favicons?domain=netflix.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/netflix.com.ico
     collapsed: true
     url: https://www.netflix.com
   - name: TikTok-Check
     title: TikTok
-    icon: https://www.google.com/s2/favicons?domain=tiktok.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/tiktok.com.ico
     collapsed: true
     url: https://www.tiktok.com
   - name: Gemini-Check
     title: Gemini
-    icon: https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/gemini.google.com.ico
     collapsed: true
     url: https://gemini.google.com
   - name: Claude-Check
     title: Claude
-    icon: https://www.google.com/s2/favicons?domain=claude.ai&sz=64
+    icon: https://icons.duckduckgo.com/ip3/claude.ai.ico
     collapsed: true
     url: https://claude.ai
   - name: Grok-Check
     title: Grok
-    icon: https://www.google.com/s2/favicons?domain=grok.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/grok.com.ico
     collapsed: true
     url: https://grok.com
   - name: Instagram-Check
     title: Instagram
-    icon: https://www.google.com/s2/favicons?domain=instagram.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/instagram.com.ico
     collapsed: true
     url: https://www.instagram.com
   - name: Twitter-Check
     title: X/Twitter
-    icon: https://www.google.com/s2/favicons?domain=x.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/x.com.ico
     collapsed: true
     url: https://x.com
   - name: Poe-Check
     title: Poe
-    icon: https://www.google.com/s2/favicons?domain=poe.com&sz=64
+    icon: https://icons.duckduckgo.com/ip3/poe.com.ico
     collapsed: true
     url: https://poe.com
 
