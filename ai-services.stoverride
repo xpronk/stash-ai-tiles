@@ -1,15 +1,39 @@
-name: AI Services Check
-desc: 检测 Claude、Gemini、Perplexity、Grok、DeepSeek、Poe 等服务可用性。
+name: AI Services & Unlock Check
+desc: 检测 GPT、YouTube、Netflix、TikTok、Gemini、Claude、Grok、Bilibili 港澳台、Bahamut、Instagram、X/Twitter、Poe 可用性，并显示出口国家。
 
 tiles:
-  - name: Claude-Check
+  - name: GPT-Check
     interval: 600
-    title: Claude
+    title: ChatGPT
     content: 检测中…
-    icon: https://www.google.com/s2/favicons?domain=claude.ai&sz=64
+    icon: https://chatgpt.com/favicon.ico
     backgroundColor: '#8A1538'
     collapsed: true
-    url: https://claude.ai
+    url: https://chatgpt.com
+  - name: YouTube-Check
+    interval: 600
+    title: YouTube
+    content: 检测中…
+    icon: https://www.google.com/s2/favicons?domain=youtube.com&sz=64
+    backgroundColor: '#8A1538'
+    collapsed: true
+    url: https://www.youtube.com
+  - name: Netflix-Check
+    interval: 600
+    title: Netflix
+    content: 检测中…
+    icon: https://www.google.com/s2/favicons?domain=netflix.com&sz=64
+    backgroundColor: '#8A1538'
+    collapsed: true
+    url: https://www.netflix.com
+  - name: TikTok-Check
+    interval: 600
+    title: TikTok
+    content: 检测中…
+    icon: https://www.google.com/s2/favicons?domain=tiktok.com&sz=64
+    backgroundColor: '#8A1538'
+    collapsed: true
+    url: https://www.tiktok.com
   - name: Gemini-Check
     interval: 600
     title: Gemini
@@ -18,14 +42,14 @@ tiles:
     backgroundColor: '#8A1538'
     collapsed: true
     url: https://gemini.google.com
-  - name: Perplexity-Check
+  - name: Claude-Check
     interval: 600
-    title: Perplexity
+    title: Claude
     content: 检测中…
-    icon: https://www.google.com/s2/favicons?domain=perplexity.ai&sz=64
+    icon: https://www.google.com/s2/favicons?domain=claude.ai&sz=64
     backgroundColor: '#8A1538'
     collapsed: true
-    url: https://www.perplexity.ai
+    url: https://claude.ai
   - name: Grok-Check
     interval: 600
     title: Grok
@@ -34,14 +58,38 @@ tiles:
     backgroundColor: '#8A1538'
     collapsed: true
     url: https://grok.com
-  - name: DeepSeek-Check
+  - name: Bilibili-HMT-Check
     interval: 600
-    title: DeepSeek
+    title: Bilibili 港澳台
     content: 检测中…
-    icon: https://www.google.com/s2/favicons?domain=deepseek.com&sz=64
+    icon: https://www.google.com/s2/favicons?domain=bilibili.com&sz=64
     backgroundColor: '#8A1538'
     collapsed: true
-    url: https://chat.deepseek.com
+    url: https://www.bilibili.com
+  - name: Bahamut-Check
+    interval: 600
+    title: Bahamut 动画疯
+    content: 检测中…
+    icon: https://www.google.com/s2/favicons?domain=ani.gamer.com.tw&sz=64
+    backgroundColor: '#8A1538'
+    collapsed: true
+    url: https://ani.gamer.com.tw
+  - name: Instagram-Check
+    interval: 600
+    title: Instagram
+    content: 检测中…
+    icon: https://www.google.com/s2/favicons?domain=instagram.com&sz=64
+    backgroundColor: '#8A1538'
+    collapsed: true
+    url: https://www.instagram.com
+  - name: Twitter-Check
+    interval: 600
+    title: X / Twitter
+    content: 检测中…
+    icon: https://www.google.com/s2/favicons?domain=x.com&sz=64
+    backgroundColor: '#8A1538'
+    collapsed: true
+    url: https://x.com
   - name: Poe-Check
     interval: 600
     title: Poe
@@ -52,21 +100,39 @@ tiles:
     url: https://poe.com
 
 script-providers:
-  Claude-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/claude.js
+  GPT-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gpt.js
+    interval: 86400
+  YouTube-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/youtube.js
+    interval: 86400
+  Netflix-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/netflix.js
+    interval: 86400
+  TikTok-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/tiktok.js
     interval: 86400
   Gemini-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/gemini.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/gemini.js
     interval: 86400
-  Perplexity-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/perplexity.js
+  Claude-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/claude.js
     interval: 86400
   Grok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/grok.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/grok.js
     interval: 86400
-  DeepSeek-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/deepseek.js
+  Bilibili-HMT-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bilibili-hmt.js
+    interval: 86400
+  Bahamut-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/bahamut.js
+    interval: 86400
+  Instagram-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/instagram.js
+    interval: 86400
+  Twitter-Check:
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/twitter.js
     interval: 86400
   Poe-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles/script/poe.js
+    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@main/script/poe.js
     interval: 86400
