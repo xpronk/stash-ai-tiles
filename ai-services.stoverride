@@ -8,52 +8,52 @@ desc: |-
 tiles:
   - name: GPT-Check
     title: ChatGPT
-    icon: https://icons.duckduckgo.com/ip3/chatgpt.com.ico
+    icon: https://chatgpt.com/favicon.ico
     collapsed: true
     url: https://chatgpt.com
   - name: YouTube-Check
     title: YouTube
-    icon: https://icons.duckduckgo.com/ip3/youtube.com.ico
+    icon: https://www.youtube.com/favicon.ico
     collapsed: true
     url: https://www.youtube.com
   - name: Netflix-Check
     title: Netflix
-    icon: https://icons.duckduckgo.com/ip3/netflix.com.ico
+    icon: https://www.netflix.com/favicon.ico
     collapsed: true
     url: https://www.netflix.com
   - name: TikTok-Check
     title: TikTok
-    icon: https://icons.duckduckgo.com/ip3/tiktok.com.ico
+    icon: https://www.tiktok.com/favicon.ico
     collapsed: true
     url: https://www.tiktok.com
   - name: Gemini-Check
     title: Gemini
-    icon: https://icons.duckduckgo.com/ip3/gemini.google.com.ico
+    icon: https://www.google.com/favicon.ico
     collapsed: true
     url: https://gemini.google.com
   - name: Claude-Check
     title: Claude
-    icon: https://icons.duckduckgo.com/ip3/claude.ai.ico
+    icon: https://claude.ai/favicon.ico
     collapsed: true
     url: https://claude.ai
   - name: Grok-Check
     title: Grok
-    icon: https://icons.duckduckgo.com/ip3/grok.com.ico
+    icon: https://grok.com/favicon.ico
     collapsed: true
     url: https://grok.com
   - name: Instagram-Check
     title: Instagram
-    icon: https://icons.duckduckgo.com/ip3/instagram.com.ico
+    icon: https://www.instagram.com/favicon.ico
     collapsed: true
     url: https://www.instagram.com
   - name: Twitter-Check
     title: X/Twitter
-    icon: https://icons.duckduckgo.com/ip3/x.com.ico
+    icon: https://x.com/favicon.ico
     collapsed: true
     url: https://x.com
   - name: Poe-Check
     title: Poe
-    icon: https://icons.duckduckgo.com/ip3/poe.com.ico
+    icon: https://poe.com/favicon.ico
     collapsed: true
     url: https://poe.com
 
