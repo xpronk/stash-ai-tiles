@@ -70,28 +70,28 @@ tiles:
 
 script-providers:
   Region-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/region.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/region.js
   GPT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/gpt.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/gpt.js
   YouTube-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/youtube.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/youtube.js
   Netflix-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/netflix.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/netflix.js
   TikTok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/tiktok.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/tiktok.js
   Gemini-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/gemini.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/gemini.js
   Claude-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/claude.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/claude.js
   Grok-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/grok.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/grok.js
   Bilibili-HMT-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/bilibili-hmt.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/bilibili-hmt.js
   Bahamut-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/bahamut.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/bahamut.js
   Instagram-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/instagram.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/instagram.js
   Twitter-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/twitter.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/twitter.js
   Poe-Check:
-    url: https://fastly.jsdelivr.net/gh/xpronk/stash-ai-tiles@6185b5904295a55684045a6f0f04f66b65383c35/script/poe.js
+    url: https://raw.githubusercontent.com/{owner}/{repo}/6185b5904295a55684045a6f0f04f66b65383c35/script/poe.js
