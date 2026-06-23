@@ -59,32 +59,32 @@ tiles:
 
 script-providers:
   GPT-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/gpt.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/gpt.js?v=2
     interval: 86400
   YouTube-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/youtube.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/youtube.js?v=2
     interval: 86400
   Netflix-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/netflix.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/netflix.js?v=2
     interval: 86400
   TikTok-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/tiktok.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/tiktok.js?v=2
     interval: 86400
   Gemini-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/gemini.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/gemini.js?v=2
     interval: 86400
   Claude-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/claude.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/claude.js?v=2
     interval: 86400
   Grok-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/grok.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/grok.js?v=2
     interval: 86400
   Instagram-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/instagram.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/instagram.js?v=2
     interval: 86400
   Twitter-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/twitter.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/twitter.js?v=2
     interval: 86400
   Poe-Check:
-    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/poe.js
+    url: https://raw.githubusercontent.com/xpronk/stash-ai-tiles/main/script/poe.js?v=2
     interval: 86400
