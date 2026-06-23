@@ -1,6 +1,6 @@
-const TITLE = "YouTube";
-const CHECK_URL = "https://www.youtube.com/premium";
-const MODE = "youtube";
+const TITLE = "出口地区";
+const CHECK_URL = "https://api.country.is/";
+const MODE = "region";
 const COUNTRY_MAP = {"US": "美国", "JP": "日本", "SG": "新加坡", "HK": "香港", "TW": "台湾", "KR": "韩国", "GB": "英国", "UK": "英国", "DE": "德国", "FR": "法国", "CA": "加拿大", "AU": "澳大利亚", "NL": "荷兰", "TR": "土耳其", "IN": "印度", "TH": "泰国", "MY": "马来西亚", "PH": "菲律宾", "ID": "印尼", "VN": "越南", "BR": "巴西", "AR": "阿根廷", "MX": "墨西哥", "CN": "中国", "MO": "澳门"};
 
 function request(method, params) {
